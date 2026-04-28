@@ -1,6 +1,6 @@
 # GaN PFC Stability Mapper
 
-This project is a hands-on design sandbox for GaN PFC work: it sweeps LTspice simulations, ranks what actually behaves well, and turns the results into something you can read, compare, and act on fast.
+This project is basically a hands-on design sandbox for GaN PFC work: it sweeps LTspice simulations, ranks what actually behaves well, and turns the results into something you can read, compare, and act on fast.
 
 The goal is simple: reduce guesswork. Instead of tweaking gate-drive values one at a time and hoping for the best, the batch runners map out the design space and surface the combinations that look stable, efficient, and worth a deeper look.
 
