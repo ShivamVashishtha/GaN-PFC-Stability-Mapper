@@ -16,10 +16,6 @@ The goal is simple: reduce guesswork. Instead of tweaking gate-drive values one 
 
 - `gan_pfc_batch_runner_ideal_bus.py` — ideal bus / V2-source study
 - `gan_pfc_batch_runner_real_load.py` — real load and output-focused study
-- `gan_pfc_batch_runner_v2.py` — alternate runner variant
-- `gan_pfc_batch_runner_fixed.py` — stabilized version of the runner logic
-- `gan_pfc_batch_runner.py` — baseline runner
-- `gan_pfc_pipline.py` — pipeline helper for orchestrating runs
 - `gan_pfc_template_ideal.asc` — LTspice template schematic
 
 ## Quick start
