@@ -109,7 +109,7 @@ elif RUN_MODE == "full_sweep":
 else:
     raise ValueError(f"Unknown RUN_MODE: {RUN_MODE}")
 
-# Parameter name aliases. The script patches whichever alias is present in the .asc .param line.
+# Parameter name akas. The script basically patches whichever alias is present in the .asc .param line.
 PARAM_ALIASES = {
     "Rg_on": ["Rg_on", "Rgon", "RGON", "RG_ON"],
     "Rg_off": ["Rg_off", "Rgoff", "RGOFF", "RG_OFF"],
@@ -123,7 +123,7 @@ PARAM_ALIASES = {
 # Rload sweep values (prioritized outer loop)
 rload_values = [20, 22, 24, 25, 26, 28, 30, 35, 40]
 
-# Additional circuit design knobs for future component sizing sweeps.
+# Additional circuit design knobs (for future component sizing sweeps)
 cbus_values = [2200e-6, 3300e-6, 4700e-6, 6800e-6]
 lboost_values = [50e-6, 75e-6, 100e-6, 150e-6]
 
@@ -181,7 +181,7 @@ REQUIRED_MEASURES = ["pin", "iin_rms", "iin_pk", "vout_avg", "vout_pp"]
 INJECT_EXTRA_MEASURES = False
 EXTRA_MEASURE_DIRECTIVES = []
 
-# Physics-health thresholds. Tune later after you get more real cases.
+# Physics-health thresholds. Can be tuned later once more real cases are obtained.
 MIN_GOOD_ELAPSED_S = 10.0
 MIN_PIN_W = 1000.0
 MIN_IIN_RMS_A = 1.0
@@ -193,7 +193,7 @@ VOUT_TARGET_V = 400.0
 PF_TARGET_MIN = 0.90
 EFF_TARGET_MIN = 90.0
 
-# If your netlist contains an output resistor connected to OUT and ground, the script estimates Pout = Vout_avg^2/R.
+# If the netlist contains an output resistor connected to OUT and ground, the script estimates Pout = Vout_avg^2/R.
 # This is an approximation unless OUT is clean DC and the load is purely resistive.
 ENABLE_POUT_FROM_LOAD_RESISTOR = True
 
